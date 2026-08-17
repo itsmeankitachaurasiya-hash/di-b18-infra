@@ -80,6 +80,7 @@ jobs:
         run: |
           az login \
             --service-principal \
+            
             --username "9c207db5-cd16-426e-b1d5-17461f7c4858" \
             --password "WnMc8Q~-BGQo4fN5-jHC-CZ9wEcsMAwAqA-_erc~k" \
             --tenant "5567a211-c5c0-42ff-990b-03aa0d9c9a50"
