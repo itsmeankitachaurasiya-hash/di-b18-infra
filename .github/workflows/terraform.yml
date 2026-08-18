@@ -28,13 +28,12 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
-      - name: Azure Login
-        run: |
-          az login \
-            --service-principal \
-            --username "557764f3-83e6-4ad0-b427-cd42bf725b07" \
-            --password "VQn8Q~5BDosq83UKLE-wRGJ~CBHrTXjooyvq9ahh" \
-            --tenant "5567a211-c5c0-42ff-990b-03aa0d9c9a50"
+      -name: Azure Login
+  run: |
+    az login --service-principal \
+      --username ${{ 557764f3-83e6-4ad0-b427-cd42bf725b07 }} \
+      --password ${{ g0C8Q~ehA2dzLkJB4yww14r4pbVYhGVeHyCxgaW5 }} \
+      --tenant ${{ 5567a211-c5c0-42ff-990b-03aa0d9c9a50 }}
 
       - name: Set Azure Subscription
         run: |
@@ -76,14 +75,13 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
-      - name: Azure Login
-        run: |
-          az login \
-            --service-principal \
-            
-            --username "557764f3-83e6-4ad0-b427-cd42bf725b07" \
-            --password "VQn8Q~5BDosq83UKLE-wRGJ~CBHrTXjooyvq9ahh" \
-            --tenant "5567a211-c5c0-42ff-990b-03aa0d9c9a50"
+      name: Azure Login
+  run: |
+    az login --service-principal \
+      --username ${{ 557764f3-83e6-4ad0-b427-cd42bf725b07 }} \
+      --password ${{ g0C8Q~ehA2dzLkJB4yww14r4pbVYhGVeHyCxgaW5 }} \
+      --tenant ${{ 5567a211-c5c0-42ff-990b-03aa0d9c9a50 }}
+
 
       - name: Set Azure Subscription
         run: |
